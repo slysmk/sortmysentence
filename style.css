@@ -1,0 +1,107 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+}
+#game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#arrange-area {
+    min-height: 50px;
+    background: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+#word-list {
+    margin: 15px 0;
+    text-align: center;
+}
+.word {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+}
+.word:hover {
+    background: #0056b3;
+}
+.correct {
+    background: #28a745 !important;
+}
+.incorrect {
+    background: #dc3545 !important;
+}
+#feedback {
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+button {
+    padding: 8px 16px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 14px;
+}
+button:hover {
+    background: #218838;
+}
+#score, #lives, #correct-count, #incorrect-count {
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.reset-button {
+    float: left;
+}
+.next-button {
+    float: right;
+}
+.home-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.home-button {
+    background: #007bff;
+}
+.home-button:hover {
+    background: #0056b3;
+}
+@media (max-width: 600px) {
+    body { margin: 10px; font-size: 14px; }
+    #game-container { padding: 10px; }
+    .word { padding: 6px 10px; font-size: 12px; margin: 3px; }
+    button { padding: 6px 12px; font-size: 12px; }
+    #arrange-area, #word-list { margin: 10px 0; }
+    h1 { font-size: 20px; }
+    p { font-size: 12px; }
+    #score, #lives, #correct-count, #incorrect-count { font-size: 16px; margin: 8px 0; }
+    .button-container { flex-direction: column; align-items: center; }
+    .reset-button, .next-button { float: none; margin: 5px; }
+}
